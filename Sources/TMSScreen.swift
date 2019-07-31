@@ -63,4 +63,16 @@ public class TMSScreen {
             return type
         }
     }
+    // 8, 1
+    public class func isNotiScreen() -> Bool {
+        
+        let screenType = TMSScreen.type
+        switch screenType {
+        case .sc_05_8,
+             .sc_06_1:
+            return true
+        default: return false
+        }
+    }
 }
+
