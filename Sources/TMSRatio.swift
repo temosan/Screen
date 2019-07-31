@@ -11,23 +11,23 @@ import UIKit
 
 fileprivate let screenRatio = (TMSScreen.bounds.width / 414)
 
-public extension Int {
+open extension Int {
     var ratio: Int { get { return Int(screenRatio) * self } }
 }
 
-public extension CGFloat {
+open extension CGFloat {
     var ratio: CGFloat { get { return screenRatio * CGFloat(self) } }
 }
 
-public extension Double {
+open extension Double {
     var ratio: Double { get { return Double(screenRatio) * self } }
 }
 
-public extension Float {
+open extension Float {
     var ratio: Float { get { return Float(screenRatio) * self } }
 }
 
-public extension CGSize {
+open extension CGSize {
     var ratio: CGSize {
         get {
             return CGSize(width: screenRatio * CGFloat(self.width),
